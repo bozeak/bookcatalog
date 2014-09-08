@@ -1,3 +1,16 @@
 .view-author-carousel h2.field-content {
 	text-align: center;
 }
+
+.customized-content {
+	text-align: justify;
+}
+
+.customized-content h2 {
+	padding-bottom: 5px;
+	margin-top: 0;
+}
+
+.description p:first-child {
+	display: inline;
+}

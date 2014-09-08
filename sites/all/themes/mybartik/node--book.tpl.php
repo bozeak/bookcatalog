@@ -80,9 +80,16 @@
  * @ingroup themeable
  */
 ?>
-
-<h2><?php print $title; ?></h2>
-    
-<div>written by: <?php print render($content['field_author']) ?> (<?php print render($content['field_publication_year']) ?>)</div>
-<div>Published at: <?php print render($content['field_publisher']) ?></div>
-<div>Description: <?php print render($content['body']) ?></div>
+<div class="customized-content">
+	<h2><?php print $title; ?></h2>
+	    
+	<div><p><b>Written by:</b> <?php print render($content['field_author']) ?> (<?php print trim(render($content['field_publication_year'])) ?>)</p></div>
+	<div><p><b>Published at:</b> <?php print render($content['field_publisher']) ?></p></div>
+	<div class="description">Description: <?php print render($content['body']) ?></div>
+	
+	<?php if(isset($content['field_file'])): ?>
+		<div>
+			<a href="<?php print render($content['field_file']); ?>">Download link</a>
+		</div>
+	<?php endif; ?>
+</div>
