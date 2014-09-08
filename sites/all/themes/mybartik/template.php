@@ -1,5 +1,5 @@
 <?php
-
+//var_dump(drupal_get_form($form_id));
 /**
  * Add body classes if certain regions have content.
  */
