@@ -1,0 +1,15 @@
+<?php
+
+/**
+ *  Implements hook_init().
+ */
+function test_module_init() {
+
+  $result = db_select('node','n')
+      ->fields('n', array('title','type', 'uid', 'status', 'changed'))
+      ->condition('type', 'book' )
+      ->orderBy('n.created', 'ASC')
+      ->execute();
+
+  var_dump($result->fetchAll());
+}
