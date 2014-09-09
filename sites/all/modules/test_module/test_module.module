@@ -5,11 +5,38 @@
  */
 function test_module_init() {
 
-  $result = db_select('node','n')
-      ->fields('n', array('title','type', 'uid', 'status', 'changed'))
+  $query = db_select('node','n');
+  $query->join('users', 'u', 'n.uid = u.uid');
+  $result = $query
+      ->fields('n', array('nid','title','type', 'uid', 'status', 'changed'))
+      ->fields('u', array('name'))
       ->condition('type', 'book' )
       ->orderBy('n.created', 'ASC')
       ->execute();
 
-  var_dump($result->fetchAll());
+
+    $header = array(t('Title'), t('Type'), t('Author'), t('Status'), t('Last update'));
+    $rows = array();
+
+    foreach($result as $row){
+      $url = url('node/'.$row->nid, array('absolute'=>TRUE));
+      $rows[] = array('<a href="'.$url.'">'.$row->title.'</a>', $row->type, $row->name, ($row->status == '1')?'published':'unpublished', date('d-m-Y H:s', $row->changed));
+    }
+
+    return theme('table', array('header'=> $header, 'rows'=>$rows));
+
+  //var_dump($result->fetchAll());
+}
+
+/**
+ * Implements hook_menu().
+ */
+function test_module_menu(){
+    $items['testmodule'] = array(
+        'title' => 'Test module',
+        'page callback' => 'test_module_init',
+        'access callback' => TRUE,
+    );
+
+    return $items;
 }
