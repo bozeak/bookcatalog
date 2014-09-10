@@ -4,64 +4,6 @@
     <content url="file://$MODULE_DIR$" />
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
-    <orderEntry type="module-library">
-      <library name="PHP">
-        <CLASSES>
-          <root url="file://$MODULE_DIR$/../ctools" />
-          <root url="file://$MODULE_DIR$/../page_title" />
-          <root url="file://$MODULE_DIR$/../../../../includes" />
-          <root url="file://$MODULE_DIR$/../entityreference" />
-          <root url="file://$MODULE_DIR$/../panels" />
-          <root url="file://$MODULE_DIR$/../libraries" />
-          <root url="file://$MODULE_DIR$/../entity" />
-          <root url="file://$MODULE_DIR$/../admin_menu" />
-          <root url="file://$MODULE_DIR$/../taxonomy_menu" />
-          <root url="file://$MODULE_DIR$/../features" />
-          <root url="file://$MODULE_DIR$/../token" />
-          <root url="file://$MODULE_DIR$/../flexslider" />
-          <root url="file://$MODULE_DIR$/../context" />
-          <root url="file://$MODULE_DIR$/../pathauto" />
-          <root url="file://$MODULE_DIR$/../strongarm" />
-          <root url="file://$MODULE_DIR$/../../../../modules" />
-          <root url="file://$MODULE_DIR$/../i18n" />
-          <root url="file://$MODULE_DIR$/../module_filter" />
-          <root url="file://$MODULE_DIR$/../variable" />
-          <root url="file://$MODULE_DIR$/../jquery_update" />
-          <root url="file://$MODULE_DIR$/../views" />
-          <root url="file://$MODULE_DIR$/../flag" />
-          <root url="file://$MODULE_DIR$/../date" />
-          <root url="file://$MODULE_DIR$/../link" />
-          <root url="file://$MODULE_DIR$/../devel" />
-        </CLASSES>
-        <SOURCES>
-          <root url="file://$MODULE_DIR$/../ctools" />
-          <root url="file://$MODULE_DIR$/../page_title" />
-          <root url="file://$MODULE_DIR$/../../../../includes" />
-          <root url="file://$MODULE_DIR$/../entityreference" />
-          <root url="file://$MODULE_DIR$/../panels" />
-          <root url="file://$MODULE_DIR$/../libraries" />
-          <root url="file://$MODULE_DIR$/../entity" />
-          <root url="file://$MODULE_DIR$/../admin_menu" />
-          <root url="file://$MODULE_DIR$/../taxonomy_menu" />
-          <root url="file://$MODULE_DIR$/../features" />
-          <root url="file://$MODULE_DIR$/../token" />
-          <root url="file://$MODULE_DIR$/../flexslider" />
-          <root url="file://$MODULE_DIR$/../context" />
-          <root url="file://$MODULE_DIR$/../pathauto" />
-          <root url="file://$MODULE_DIR$/../strongarm" />
-          <root url="file://$MODULE_DIR$/../../../../modules" />
-          <root url="file://$MODULE_DIR$/../i18n" />
-          <root url="file://$MODULE_DIR$/../module_filter" />
-          <root url="file://$MODULE_DIR$/../variable" />
-          <root url="file://$MODULE_DIR$/../jquery_update" />
-          <root url="file://$MODULE_DIR$/../views" />
-          <root url="file://$MODULE_DIR$/../flag" />
-          <root url="file://$MODULE_DIR$/../date" />
-          <root url="file://$MODULE_DIR$/../link" />
-          <root url="file://$MODULE_DIR$/../devel" />
-        </SOURCES>
-      </library>
-    </orderEntry>
   </component>
 </module>
 
