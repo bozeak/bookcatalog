@@ -36,6 +36,7 @@ function test_module_menu(){
         'title' => 'Test module',
         'page callback' => 'test_module_init',
         'access callback' => TRUE,
+        'type'=> MENU_NORMAL_ITEM,
     );
 
     return $items;
